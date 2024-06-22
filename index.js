@@ -6,12 +6,6 @@ var move=0;
 function changeTurn(){
     move++;
 
-    if(move===9){
-        $("h2").text("Draw!!!");
-        gameover.play();
-        return;
-    }
-
     if (checkWin()) {
         $("h2").text("Player " + turn + " Wins!");
         gameover.play();
@@ -26,6 +20,11 @@ function changeTurn(){
     else{
         $("h2").text("Player One's Turn");
         turn= "X";
+    }
+
+    if(move===9){
+        $("h2").text("Draw!!!");
+        gameover.play();
     }
 }
 
