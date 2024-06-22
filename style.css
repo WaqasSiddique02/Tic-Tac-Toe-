@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(29, 1, 107);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: cursive;
+    font-size: 60px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns:150px 150px 150px ;
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.container{
+    background-color: rgba(207, 193, 0, 0.993);
+    padding: 10px;
+    border: solid;
+    border-width: 2px;
+    height: 110px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 100px;
+}
+
+.container:hover{
+    background-color: rgba(207, 193, 0, 0.8);
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
